@@ -5,25 +5,15 @@ const sequelize = require('../config/connection.js');
 class Category extends Model {}
 
 Category.init({
-    // define columns
-    title: {
-        type: DataTypes.STRING
+    id: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        primaryKey: true,
+        autoIncrement: true
     },
-    author: {
-        type: DataTypes.STRING
-    },
-    isbn: {
-        type: DataTypes.STRING
-    },
-    pages: {
-        type: DataTypes.INTEGER
-    },
-    edition: {
-        type: DataTypes.INTEGER
-    },
-    // Will become `is_paperback` in table due to `underscored` flag
-    isPaperback: {
-        type: DataTypes.BOOLEAN
+    category_name: {
+        type: DataTypes.STRING,
+        allowNull: false
     }
 }, {
     sequelize,
