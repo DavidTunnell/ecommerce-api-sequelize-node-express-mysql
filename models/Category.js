@@ -1,9 +1,11 @@
 const { Model, DataTypes } = require('sequelize');
 
+// use our db connection object
 const sequelize = require('../config/connection.js');
 
 class Category extends Model {}
 
+//define category model and validation
 Category.init({
     id: {
         type: DataTypes.INTEGER,

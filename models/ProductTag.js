@@ -4,6 +4,7 @@ const sequelize = require('../config/connection');
 
 class ProductTag extends Model {}
 
+//define ProductTag model and validation
 ProductTag.init({
     id: {
         type: DataTypes.INTEGER,
