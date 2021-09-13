@@ -1,4 +1,4 @@
-# 13 Ecommerce API using Node/Express, Sequelize, MySQL
+# Ecommerce API using Node/Express, Sequelize, MySQL
 
 This app is a server side REST API created with [Node.js](https://nodejs.org/en/) and [Express.js](https://expressjs.com/) using a relational database ([MySQL](https://www.mysql.com/)) and [Sequelize](https://sequelize.org/) for an ecommerce store. It uses 4 tables, Category, Product, Tag, ProductTag to create the schema below. These tables are generated using sequelize models located in the `./models` folder. The API routes associated with these tables are in the `./api` folder but are called  from `./routes/index.js` when `server.js` is run. CRUD functionality is available for each table and their relational connections.
 
